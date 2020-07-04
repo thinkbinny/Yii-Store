@@ -1,0 +1,23 @@
+Options -Indexes
+Options +FollowSymLinks
+IndexIgnore */*
+RewriteEngine on
+
+
+RewriteCond %{REQUEST_URI} ^/admin/$
+RewriteRule ^(admin)/$ /$1 [R=301,L]
+RewriteCond %{REQUEST_URI} ^/admin
+RewriteRule ^admin(/.+)?$ /backend/$1 [L,PT]
+
+#RewriteCond %{REQUEST_URI} ^/uploads/$
+#RewriteRule ^(uploads)/$ /$1 [R=301,L]
+RewriteCond %{REQUEST_URI} ^/uploads
+RewriteRule ^uploads(/.+)?$ /storage/uploads/$1 [L,PT]
+
+
+#RewriteCond %{REQUEST_URI} ^.*$
+RewriteCond %{REQUEST_URI} ^.*$
+RewriteRule ^(.*)$ /frontend/$1 [L,PT]
+#RewriteRule ^(.*)(.html|.shtml)$ /frontend/$1 [L,PT]
+#RewriteRule !\.(js|ico|gif|jpg|png|css|otf|eot|svg|ttf|woff|woff2)$ index.php
+

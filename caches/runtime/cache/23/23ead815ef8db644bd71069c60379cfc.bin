@@ -1,0 +1,1 @@
+a:2:{i:0;a:3:{i:0;a:3:{s:2:"id";s:1:"1";s:5:"keyid";s:5:"basic";s:5:"title";s:12:"基本配置";}i:1;a:3:{s:2:"id";s:1:"2";s:5:"keyid";s:8:"sendmail";s:5:"title";s:12:"邮箱配置";}i:2;a:3:{s:2:"id";s:1:"3";s:5:"keyid";s:7:"uploads";s:5:"title";s:12:"上传配置";}}i:1;N;}
